@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Olashubomi Fashakin",
     description: "Software engineer",
     creator: "Fashakin Olashubomi",
-    card: "summary",
+    card: "summary_large_image",
     images: [], //FIXME: ADD IMAGE
   },
   alternates: {
