@@ -5,6 +5,7 @@ import Skills from "./_components/skills";
 import Contact from "./_components/contacts";
 
 import MailIcon from "./_components/icons/mail";
+import NewsIcon from "./_components/icons/news";
 import GithubIcon from "./_components/icons/github";
 import TwitterIcon from "./_components/icons/twitter";
 
@@ -36,8 +37,11 @@ export default function Home() {
         <div id="about" className="space-y-6 text-sm">
           <p>
             I am a software engineer who loves challenges and learning new
-            things. I build systems that solve real problems and enjoy exploring
-            new technologies to create useful solutions.
+            things. I build systems that solve real problems, with a growing
+            focus on distributed systems, and enjoy exploring new technologies
+            to create useful solutions. I&apos;m also diving into database
+            internals to deepen my understanding of relational databases like
+            PostgreSQL and MySQL.
           </p>
 
           <p>
@@ -62,7 +66,7 @@ export default function Home() {
         <div id="contact" className="space-y-4">
           <h3 className="font-bold text-sm">Contact</h3>
 
-          <div className="flex gap-6 text-sm flex-wrap">
+          <div className="flex gap-8 text-sm flex-wrap">
             <Contact
               label="Github"
               href="https://github.com/shubomifashakin"
@@ -80,10 +84,16 @@ export default function Home() {
               href="mailto:shubomifashakin@outlook.com"
               icon={<MailIcon width={14} height={14} />}
             />
+
+            <Contact
+              label="Blog"
+              href="https://blog.545plea.xyz"
+              icon={<NewsIcon width={14} height={14} />}
+            />
           </div>
         </div>
 
-        <div id="skills" className="space-y-4">
+        {/* <div id="skills" className="space-y-4">
           <h3 className="font-bold text-sm">Skills</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
@@ -129,7 +139,7 @@ export default function Home() {
               items={["Golang", "Terraform", "Kubernetes"]}
             />
           </div>
-        </div>
+        </div> */}
 
         <div id="projects" className="space-y-4">
           <h3 className="font-bold text-sm">Projects</h3>
@@ -138,7 +148,7 @@ export default function Home() {
             <Project
               status="wip"
               name="Null Void"
-              description="Realtime collaborative canvas, (Mini-MS Paint but with Figma-inspired features)."
+              description="Realtime collaborative canvas, (Mini-MS Paint but with Collaborative features). I built this to demonstrate how to scale websockets over distributed systems."
               image={githubImg}
               link="https://github.com/shubomifashakin/Null-Void"
             />

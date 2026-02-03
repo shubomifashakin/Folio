@@ -9,7 +9,7 @@ export default function Contact({ href, icon, label }: ContactProps) {
     <a
       href={href}
       target="_blank"
-      className="bg-white/5 px-4 font-bold py-2 rounded-full hover:bg-white/10 text-sm transition-all duration-300 flex items-center gap-x-2"
+      className="font-bold py-2 rounded-full hover:opacity-80 text-xs transition-all duration-300 flex items-center gap-x-2"
     >
       {icon}
       {label}
