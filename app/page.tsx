@@ -12,6 +12,7 @@ import TwitterIcon from "./_components/icons/twitter";
 import me from "../public/images/me.webp";
 import paytrailIcon from "../public/images/paytrail-icon.webp";
 import githubImg from "../public/images/github.webp";
+import nullVoidImg from "../public/images/null-void.webp";
 
 export const dynamic = "force-dynamic";
 
@@ -54,11 +55,11 @@ export default function Home() {
             </a>{" "}
             and{" "}
             <a
-              href="https://github.com/shubomifashakin/Null-Void"
+              href="https://github.com/shubomifashakin/Temp"
               target="_blank"
               className="border-b border-dashed hover:border-white/60 transition-all duration-200 ease-in-out"
             >
-              Null Void
+              Temp
             </a>
           </p>
         </div>
@@ -147,10 +148,18 @@ export default function Home() {
           <div className="flex flex-col gap-y-6">
             <Project
               status="wip"
+              name="Temp"
+              description="A simple ephemeral file sharing platform that enables users to share files with time-limited access and automatic virus scanning"
+              image={githubImg}
+              link="https://github.com/shubomifashakin/Temp"
+            />
+
+            <Project
+              status="completed"
               name="Null Void"
               description="Realtime collaborative canvas, (Mini-MS Paint but with Collaborative features). I built this to demonstrate how to scale websockets over distributed systems."
-              image={githubImg}
-              link="https://github.com/shubomifashakin/Null-Void"
+              image={nullVoidImg}
+              link="https://null-void.545plea.xyz/"
             />
 
             <Project
