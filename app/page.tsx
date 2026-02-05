@@ -169,14 +169,6 @@ export default function Home() {
               image={paytrailIcon}
               link="https://apps.apple.com/us/app/paytrail/id6755418652"
             />
-
-            <Project
-              status="completed"
-              name="Org-Rel Api"
-              description="RBAC-powered multi-tenant API built with NestJS."
-              image={githubImg}
-              link="https://github.com/shubomifashakin/org-rel"
-            />
           </div>
         </div>
       </main>
