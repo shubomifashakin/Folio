@@ -65,7 +65,7 @@ export default function Home() {
         </div>
 
         <div id="contact" className="space-y-4">
-          <h3 className="font-bold text-sm">Contact</h3>
+          <h3 className="font-semibold text-sm">Contact</h3>
 
           <div className="flex gap-8 text-sm flex-wrap">
             <Contact
@@ -82,7 +82,7 @@ export default function Home() {
 
             <Contact
               label="Mail"
-              href="mailto:shubomifashakin@outlook.com"
+              href="mailto:subomifasakin@outlook.com"
               icon={<MailIcon width={14} height={14} />}
             />
 
@@ -143,16 +143,18 @@ export default function Home() {
         </div> */}
 
         <div id="projects" className="space-y-4">
-          <h3 className="font-bold text-sm">Projects</h3>
+          <h3 className="font-semibold text-sm">Projects</h3>
 
-          <div className="flex flex-col gap-y-6">
+          <div className="flex flex-col gap-y-4">
             <Project
               status="wip"
               name="Temp"
-              description="A simple ephemeral file sharing platform that enables users to share files with time-limited access and automatic virus scanning"
+              description="A simple ephemeral file sharing platform that enables users to share files with time-limited access and automatic virus scanning."
               image={githubImg}
               link="https://github.com/shubomifashakin/Temp"
             />
+
+            <div className="border-t border-t-white/10" />
 
             <Project
               status="completed"
@@ -161,6 +163,8 @@ export default function Home() {
               image={nullVoidImg}
               link="https://null-void.545plea.xyz/"
             />
+
+            <div className="border-t border-t-white/10" />
 
             <Project
               status="wip"
