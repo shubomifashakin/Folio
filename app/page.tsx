@@ -49,7 +49,7 @@ export default function Home() {
             I&apos;m currently building{" "}
             <a
               href="https://apps.apple.com/us/app/paytrail/id6755418652"
-              className="border-b border-dashed hover:border-white/60 transition-all duration-200 ease-in-out"
+              className="border-b border-dashed hover:opacity-75 transition-all duration-200 ease-in-out"
             >
               Paytrail
             </a>{" "}
@@ -57,7 +57,7 @@ export default function Home() {
             <a
               href="https://github.com/shubomifashakin/Temp"
               target="_blank"
-              className="border-b border-dashed hover:border-white/60 transition-all duration-200 ease-in-out"
+              className="border-b border-dashed hover:opacity-75 transition-all duration-200 ease-in-out"
             >
               Temp
             </a>
