@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className="mx-auto space-y-8 font-sans max-w-2xl px-8 pt-20">
       <main className="space-y-10">
-        <div className="size-20 relative rounded-full border border-white/10 overflow-hidden">
+        <div className="size-20 relative rounded-full overflow-hidden">
           <Image
             fill
             src={me}
@@ -37,19 +37,17 @@ export default function Home() {
 
         <div id="about" className="space-y-6 text-sm">
           <p>
-            I am a software engineer who loves challenges and learning new
-            things. I build systems that solve real problems, with a growing
-            focus on distributed systems, and enjoy exploring new technologies
-            to create useful solutions. I&apos;m also diving into database
-            internals to deepen my understanding of relational databases like
-            PostgreSQL and MySQL.
+            I am majorly interested in backend and systems engineering but I
+            dabble in frontend and mobile development sometimes (usually not by
+            choice lol). I&apos;m also trying my best to deepen my understanding
+            of databases like PostgreSQL and MySQL.
           </p>
 
           <p>
-            I&apos;m currently building{" "}
+            You can find me working on some cool projects like{" "}
             <a
               href="https://apps.apple.com/us/app/paytrail/id6755418652"
-              className="border-b border-dashed hover:opacity-75 transition-all duration-200 ease-in-out"
+              className="underline hover:opacity-75 transition-all duration-200 ease-in-out"
             >
               Paytrail
             </a>{" "}
@@ -57,7 +55,7 @@ export default function Home() {
             <a
               href="https://github.com/shubomifashakin/Temp"
               target="_blank"
-              className="border-b border-dashed hover:opacity-75 transition-all duration-200 ease-in-out"
+              className="underline hover:opacity-75 transition-all duration-200 ease-in-out"
             >
               Temp
             </a>
