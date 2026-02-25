@@ -38,9 +38,11 @@ export default function Home() {
         <div id="about" className="space-y-6 text-sm">
           <p>
             I am majorly interested in backend and systems engineering but I
-            dabble in frontend and mobile development sometimes (usually not by
-            choice lol). I&apos;m also trying my best to deepen my understanding
-            of databases like PostgreSQL and MySQL.
+            dabble in frontend and mobile development from time to time (usually
+            not by choice lol). I&apos;m also trying my best to deepen my
+            understanding of database internals, particularly PostgreSQL and
+            MySQL. Lately, I&apos;ve been getting more into DevOps and
+            infrastructure engineering with a strong interest in self-hosting.
           </p>
 
           <p>
@@ -59,6 +61,7 @@ export default function Home() {
             >
               Temp
             </a>
+            .
           </p>
         </div>
 
@@ -147,7 +150,7 @@ export default function Home() {
             <Project
               status="wip"
               name="Temp"
-              description="A simple ephemeral file sharing platform that enables users to share files with time-limited access and automatic virus scanning."
+              description="A secure, ephemeral file sharing service with time-limited links, optional password protection, malware scanning, and basic access analytics."
               image={githubImg}
               link="https://github.com/shubomifashakin/Temp"
             />
