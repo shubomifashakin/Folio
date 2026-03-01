@@ -12,6 +12,7 @@ import TwitterIcon from "./_components/icons/twitter";
 import me from "../public/images/me.webp";
 import paytrailIcon from "../public/images/paytrail-icon.webp";
 import githubImg from "../public/images/github.webp";
+import tempImg from "../public/images/temp.webp";
 import nullVoidImg from "../public/images/null-void.webp";
 
 export const dynamic = "force-dynamic";
@@ -55,7 +56,7 @@ export default function Home() {
             </a>{" "}
             and{" "}
             <a
-              href="https://github.com/shubomifashakin/Temp"
+              href="https://temp.545plea.xyz"
               target="_blank"
               className="underline hover:opacity-75 transition-all duration-200 ease-in-out"
             >
@@ -148,11 +149,11 @@ export default function Home() {
 
           <div className="flex flex-col gap-y-4">
             <Project
-              status="wip"
+              status="completed"
               name="Temp"
               description="A secure, ephemeral file sharing service with time-limited links, optional password protection, malware scanning, and basic access analytics."
-              image={githubImg}
-              link="https://github.com/shubomifashakin/Temp"
+              image={tempImg}
+              link="https://temp.545plea.xyz/"
             />
 
             <div className="border-t border-t-white/10" />
