@@ -38,12 +38,12 @@ export default function Home() {
 
         <div id="about" className="space-y-6 text-sm">
           <p>
-            I am majorly interested in backend and systems engineering but I
-            dabble in frontend and mobile development from time to time (usually
-            not by choice lol). I&apos;m also trying my best to deepen my
-            understanding of database internals, particularly PostgreSQL and
-            MySQL. Lately, I&apos;ve been getting more into DevOps and
-            infrastructure engineering with a strong interest in self-hosting.
+            I am primarily interested in backend and systems engineering but I
+            dabble in frontend and mobile development from time to time.
+            I&apos;m also trying my best to deepen my understanding of database
+            internals, particularly PostgreSQL and MySQL. Lately, I&apos;ve been
+            getting more into DevOps and infrastructure engineering with a
+            strong interest in self-hosting.
           </p>
 
           <p>
@@ -148,6 +148,16 @@ export default function Home() {
           <h3 className="font-semibold text-sm">Projects</h3>
 
           <div className="flex flex-col gap-y-4">
+            <Project
+              status="completed"
+              name="Temp CLI"
+              description="A CLI tool for uploading files, managing links, and tracking access on Temp — published to npm."
+              image={tempImg}
+              link="https://www.npmjs.com/package/@545plea/temp-cli"
+            />
+
+            <div className="border-t border-t-white/10" />
+
             <Project
               status="completed"
               name="Temp"
