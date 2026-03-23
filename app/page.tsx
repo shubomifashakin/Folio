@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import Project from "./_components/project";
-import Skills from "./_components/skills";
 import Contact from "./_components/contacts";
 
 import MailIcon from "./_components/icons/mail";
@@ -10,10 +9,9 @@ import GithubIcon from "./_components/icons/github";
 import TwitterIcon from "./_components/icons/twitter";
 
 import me from "../public/images/me.webp";
-import paytrailIcon from "../public/images/paytrail-icon.webp";
-import githubImg from "../public/images/github.webp";
 import tempImg from "../public/images/temp.webp";
 import nullVoidImg from "../public/images/null-void.webp";
+import paytrailIcon from "../public/images/paytrail-icon.webp";
 
 export const dynamic = "force-dynamic";
 
@@ -96,60 +94,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div id="skills" className="space-y-4">
-          <h3 className="font-bold text-sm">Skills</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
-            <Skills
-              title="Frontend"
-              items={["React", "NextJS", "Tailwind", "Framer Motion"]}
-            />
-
-            <Skills title="Mobile" items={["React Native", "Expo"]} />
-
-            <Skills
-              title="Backend"
-              items={[
-                "NodeJS",
-                "NestJS",
-                "ExpressJS",
-                "REST",
-                "GraphQL",
-                "PostgreSQL",
-                "Redis",
-                "DynamoDB",
-                "SQLite",
-              ]}
-            />
-
-            <Skills
-              title="Devops/Tools"
-              items={[
-                "Docker",
-                "AWS",
-                "AWS CDK",
-                "Git",
-                "Github",
-                "CI/CD",
-                "Linux",
-                "Hetzner",
-                "Grafana Alloy",
-              ]}
-            />
-
-            <Skills
-              title="Learning"
-              items={["Golang", "Terraform", "Kubernetes"]}
-            />
-          </div>
-        </div> */}
-
         <div id="projects" className="space-y-4">
           <h3 className="font-semibold text-sm">Projects</h3>
 
           <div className="flex flex-col gap-y-4">
             <Project
-              status="completed"
               name="Temp CLI"
               description="A CLI tool for uploading files, managing links, and tracking access on Temp — published to npm."
               image={tempImg}
@@ -159,7 +108,6 @@ export default function Home() {
             <div className="border-t border-t-white/10" />
 
             <Project
-              status="completed"
               name="Temp"
               description="A secure, ephemeral file sharing service with time-limited links, optional password protection, malware scanning, and basic access analytics."
               image={tempImg}
@@ -169,7 +117,6 @@ export default function Home() {
             <div className="border-t border-t-white/10" />
 
             <Project
-              status="completed"
               name="Null Void"
               description="Realtime collaborative canvas, (Mini-MS Paint but with Collaborative features). I built this to demonstrate how to scale websockets over distributed systems."
               image={nullVoidImg}
@@ -179,7 +126,6 @@ export default function Home() {
             <div className="border-t border-t-white/10" />
 
             <Project
-              status="wip"
               name="Paytrail"
               description="AI-powered, offline first budgeting and finance tracking app."
               image={paytrailIcon}
