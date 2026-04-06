@@ -30,9 +30,7 @@ export default function Home() {
           />
         </div>
 
-        <h1 className="text-2xl tracking-tight font-bold">
-          Hi👋, I&apos;m Olashubomi.
-        </h1>
+        <h1 className="text-2xl tracking-tight font-bold">Olashubomi</h1>
 
         <div id="about" className="space-y-6 text-sm">
           <p>
@@ -42,25 +40,6 @@ export default function Home() {
             internals, particularly PostgreSQL and MySQL. Lately, I&apos;ve been
             getting more into DevOps and infrastructure engineering with a
             strong interest in self-hosting.
-          </p>
-
-          <p>
-            You can find me working on some cool projects like{" "}
-            <a
-              href="https://apps.apple.com/us/app/paytrail/id6755418652"
-              className="underline hover:opacity-75 transition-all duration-200 ease-in-out"
-            >
-              Paytrail
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://temp.545plea.xyz"
-              target="_blank"
-              className="underline hover:opacity-75 transition-all duration-200 ease-in-out"
-            >
-              Temp
-            </a>
-            .
           </p>
         </div>
 
