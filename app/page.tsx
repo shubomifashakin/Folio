@@ -97,7 +97,7 @@ export default function Home() {
 
             <Project
               name="Null Void"
-              description="Realtime collaborative canvas, (Mini-MS Paint but with Collaborative features). I built this to demonstrate how to scale websockets over distributed systems."
+              description="Virtual whiteboard for real-time collaborative drawing and brainstorming."
               image={nullVoidImg}
               link="https://null-void.545plea.xyz/"
             />
