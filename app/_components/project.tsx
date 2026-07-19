@@ -1,34 +1,23 @@
-import Image from "next/image";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-
 export default function Project({
   name,
   description,
-  image,
   link,
 }: {
   name: string;
   description: string;
-  image: string | StaticImport;
   link: string;
 }) {
+  const hostname = new URL(link).hostname.toUpperCase();
+
   return (
     <a
       href={link}
       target="_blank"
-      className="flex gap-x-4 items-center hover:opacity-75 rounded-xl transition-all duration-200 ease-in-out"
+      className="block py-4 hover:opacity-75 transition-opacity duration-200 space-y-1.5"
     >
-      <div className="shrink-0 relative rounded-lg overflow-hidden size-16">
-        <Image src={image} alt={`${name} logo`} fill className="object-cover" />
-      </div>
-
-      <div className="space-y-1 text-sm">
-        <div className="flex gap-x-4">
-          <h4 className="font-medium">{name}</h4>
-        </div>
-
-        <p className="font-medium text-xs text-foreground/80">{description}</p>
-      </div>
+      <h4 className="font-serif text-base font-normal text-amber-50">{name}</h4>
+      <p className="text-[10px] tracking-[0.15em] text-foreground/40">{hostname}</p>
+      <p className="text-sm text-foreground/70">{description}</p>
     </a>
   );
 }

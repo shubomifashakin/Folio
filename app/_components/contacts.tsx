@@ -1,17 +1,16 @@
-interface ContactProps {
-  href: string;
-  icon: React.ReactNode;
+export default function ContactLink({
+  label,
+  href,
+}: {
   label: string;
-}
-
-export default function Contact({ href, icon, label }: ContactProps) {
+  href: string;
+}) {
   return (
     <a
       href={href}
-      target="_blank"
-      className="font-medium py-2 rounded-full hover:opacity-80 text-xs transition-all duration-300 flex items-center gap-x-2"
+      target={href.startsWith("mailto:") ? undefined : "_blank"}
+      className="group text-sm inline-flex items-center gap-x-0.5 hover:text-foreground transition-colors duration-200"
     >
-      {icon}
       {label}
     </a>
   );
