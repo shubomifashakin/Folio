@@ -18,6 +18,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://545plea.xyz"),
   title: "Olashubomi",
   description: "Software engineer",
   creator: "Fashakin Olashubomi",
@@ -36,14 +37,15 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://545plea.xyz",
     siteName: "Olashubomi's Portfolio",
-    images: [], //FIXME: ADD IMAGEs
+    images: ["/images/notion-face.png"],
   },
   twitter: {
     title: "Olashubomi Fashakin",
     description: "Software engineer",
     creator: "Fashakin Olashubomi",
     card: "summary_large_image",
-    images: [], //FIXME: ADD IMAGE
+    images: ["/images/notion-face.png"],
+    site: "https://545plea.xyz",
   },
   alternates: {
     canonical: "https://545plea.xyz",
