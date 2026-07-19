@@ -12,6 +12,7 @@ import me from "../public/images/me.webp";
 import tempImg from "../public/images/temp.webp";
 import nullVoidImg from "../public/images/null-void.webp";
 import paytrailIcon from "../public/images/paytrail-icon.webp";
+import githubImg from "../public/images/github.webp";
 
 export const dynamic = "force-dynamic";
 
@@ -77,6 +78,15 @@ export default function Home() {
           <h3 className="font-semibold text-sm">Projects</h3>
 
           <div className="flex flex-col gap-y-4">
+            <Project
+              name="DevSecOps Pipeline Scaffold"
+              description="A DevSecOps pipeline scaffold skill for Claude Code."
+              image={githubImg}
+              link="https://github.com/shubomifashakin/devsecops-pipeline-scaffold"
+            />
+
+            <div className="border-t border-t-white/10" />
+
             <Project
               name="Temp CLI"
               description="A CLI tool for uploading files, managing links, and tracking access on Temp — published to npm."
